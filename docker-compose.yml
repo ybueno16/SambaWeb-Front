@@ -1,0 +1,11 @@
+services:
+  angular:
+    image: node:20
+    ports:
+      - "4200:4200"
+    environment:
+      NODE_ENV: development
+    volumes:
+      - ./:/SambaWeb-Front
+    working_dir: /SambaWeb-Front
+    command: bash -c "npm install -g @angular/cli@17 && tail -f /dev/null"
