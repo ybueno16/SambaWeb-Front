@@ -7,5 +7,7 @@ services:
       NODE_ENV: development
     volumes:
       - ./:/SambaWeb-Front
+      - .docker/:/SambaWeb-Front/.docker
     working_dir: /SambaWeb-Front
-    command: bash -c "npm install -g @angular/cli@17 && tail -f /dev/null"
+    command: bash -c "sh .docker/entrypoint.sh"
+    
