@@ -1,0 +1,20 @@
+<div class="loginForm">
+  <form [formGroup]="login">
+    <label>
+      User:
+      <input formControlName="user" type="text" />
+    </label>
+
+    <label>
+      Password:
+      <input formControlName="password" type="text" />
+    </label>
+
+    <button type="submit">Login</button>
+  </form>
+  <div class="config-icon">
+    <a routerLink="ip-config">
+      <img src="../../../assets/icons/gear-solid.svg" />
+    </a>
+  </div>
+</div>
