@@ -10,9 +10,18 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
 })
+
+
 export class LoginComponent {
+constructor() {
+
+  }
   login = new FormGroup({
     user: new FormControl('', [Validators.required, Validators.maxLength(255)]),
     password: new FormControl('', [Validators.required]),
   });
+
+  public onSubmit(): void {
+
+  }
 }
