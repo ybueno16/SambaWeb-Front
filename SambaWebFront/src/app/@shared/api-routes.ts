@@ -1,3 +1,4 @@
 export const api_routes = {
-  LOGIN: '/login',
+  LOGIN: 'login',
+  SERVER_CONFIG: 'serverconfig',
 };

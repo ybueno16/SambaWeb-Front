@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "ipify": "^6.0.0",
     "js-file-download": "^0.4.12"
   }
 }

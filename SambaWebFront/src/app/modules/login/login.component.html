@@ -1,5 +1,5 @@
-<div class="loginForm">
-  <form [formGroup]="login">
+<div class="login">
+  <form [formGroup]="login" (ngSubmit)="onSubmit()">
     <label>
       User:
       <input formControlName="user" type="text" />
@@ -12,4 +12,6 @@
 
     <button type="submit">Login</button>
   </form>
+  <img src="../../../assets/icons/gear-solid.svg" alt="Configurar Servidor" class="config-icon"
+    (click)="navigateToServerConfig()" />
 </div>

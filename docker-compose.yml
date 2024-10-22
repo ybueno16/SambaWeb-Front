@@ -10,4 +10,12 @@ services:
       - .docker/:/SambaWeb-Front/.docker
     working_dir: /SambaWeb-Front
     command: bash -c "sh .docker/entrypoint.sh"
-    
+    networks:
+      - sambaweb
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+
+networks:
+  sambaweb:
+    external: true

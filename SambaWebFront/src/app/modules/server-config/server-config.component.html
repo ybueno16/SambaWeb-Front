@@ -1,0 +1,15 @@
+<div class="server-config">
+  <form [formGroup]="ipConfig" (ngSubmit)="onSubmit()">
+    <label>
+      IP:
+      <input formControlName="ip" type="text" />
+    </label>
+
+    <label>
+      Port:
+      <input formControlName="port" type="text" />
+    </label>
+
+    <button type="submit">Save</button>
+  </form>
+</div>
