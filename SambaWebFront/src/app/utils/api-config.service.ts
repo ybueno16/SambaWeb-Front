@@ -15,7 +15,8 @@ export class ApiConfigService {
   }
 
   public updateApiUrl(ip: string, port: number): void {
-    const newApiUrl = `http://${ip}:${port}`;
+    const newApiUrl = `http://host.docker.internal:${port}`;
+    localStorage.removeItem('apiUrl');
     localStorage.setItem('apiUrl', newApiUrl);
     environment.API_URL_SAMBA = `${newApiUrl}/api/smb`;
   }

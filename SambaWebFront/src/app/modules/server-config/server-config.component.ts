@@ -40,6 +40,7 @@ export class ServerConfigComponent {
       port: parseInt(this.ipConfig.get('port')!.value ?? '8080', 10),
     };
     this.apiConfig.updateApiUrl(serverConfig.ip, serverConfig.port);
+    console.log(this.apiConfig.getApiUrl());
 
     this.apiConfig
       .saveServerConfig(serverConfig)
