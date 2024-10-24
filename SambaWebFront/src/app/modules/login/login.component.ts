@@ -27,10 +27,10 @@ export class LoginComponent {
     const loginData: ILogin = {
       user: {
         user: this.login.get('user')!.value?? '',
-        password: '',
+        password: this.login.get('password')!.value?? '',
       },
       sudoAuthentication: {
-        sudoUser: '',
+        sudoUser: this.login.get('user')!.value?? '',
         sudoPassword: this.login.get('password')!.value?? '',
       },
     };
