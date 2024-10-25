@@ -16,7 +16,10 @@ import { ILogin } from './interfaces/login-interface';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent {
-  constructor(private router: Router, private loginService: LoginServiceService) { }
+  constructor(
+    private router: Router,
+    private loginService: LoginServiceService,
+  ) { }
 
   login = new FormGroup({
     user: new FormControl('', [Validators.required, Validators.maxLength(255)]),
@@ -26,29 +29,30 @@ export class LoginComponent {
   public onSubmit(): void {
     const loginData: ILogin = {
       user: {
-        user: this.login.get('user')!.value?? '',
-        password: this.login.get('password')!.value?? '',
+        user: this.login.get('user')!.value ?? '',
+        password: this.login.get('password')!.value ?? '',
       },
       sudoAuthentication: {
-        sudoUser: this.login.get('user')!.value?? '',
-        sudoPassword: this.login.get('password')!.value?? '',
+        sudoUser: this.login.get('user')!.value ?? '',
+        sudoPassword: this.login.get('password')!.value ?? '',
       },
     };
 
     this.loginService
-    .login(loginData)
-    .pipe(
-        catchError((error: any) => {
+      .login(loginData)
+      .pipe(
+        catchError((error: string) => {
           console.error('Erro ao fazer login:', error);
           return throwError(() => error);
         }),
       )
-    .subscribe((response) => {
+      .subscribe((response) => {
         console.log(response);
+        this.navigateToDashboard();
       });
   }
 
-  public navigateToServerConfig(): void {
-    this.router.navigate(['/server-config']);
+  public navigateToDashboard(): void {
+    this.router.navigate(['/dashboard']);
   }
 }
