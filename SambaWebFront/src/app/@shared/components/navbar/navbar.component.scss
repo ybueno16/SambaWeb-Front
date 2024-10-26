@@ -23,16 +23,25 @@
 
   &.submenu {
     &:hover {
-      .submenu-list {
+     .submenu-list {
         display: block;
       }
     }
   }
 
-  .nav-link {
+  &:not(.submenu) {
+    cursor: pointer;
+  }
+
+  &:first-child {
+    cursor: pointer;
+  }
+
+ .nav-link {
     color: #fff;
     text-decoration: none;
     transition: color 0.2s ease;
+    cursor: pointer;
 
     &:hover {
       color: #ccc;
@@ -49,14 +58,15 @@
   padding: 0;
   border-radius: 0 0 5px 5px;
 
-  .submenu-item {
+ .submenu-item {
     margin: 0;
     padding: 0;
 
-    .submenu-link {
+   .submenu-link {
       display: block;
       padding: 10px;
       transition: background-color 0.2s ease;
+      cursor: pointer;
 
       &:hover {
         background-color: #444;
