@@ -6,6 +6,7 @@ import { LoginServiceService } from './service/login-service.service';
 import { catchError, throwError } from 'rxjs';
 import { HttpClientModule } from '@angular/common/http';
 import { ILogin } from './interfaces/login-interface';
+import { ROUTES } from '../../@shared/app.routes.constants';
 
 @Component({
   selector: 'app-login',
@@ -53,6 +54,6 @@ export class LoginComponent {
   }
 
   public navigateToDashboard(): void {
-    this.router.navigate(['/dashboard']);
+    this.router.navigate([ROUTES.DASHBOARD]);
   }
 }

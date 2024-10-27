@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ROUTES } from '../../app.routes.constants';
 
 @Component({
   selector: 'app-sidebar',
@@ -12,6 +13,6 @@ export class SidebarComponent {
   constructor(private router: Router) { }
 
   public navigateToUserPage() {
-    this.router.navigate(['dashboard/user']);
+    this.router.navigate([ROUTES.USER]);
   }
 }

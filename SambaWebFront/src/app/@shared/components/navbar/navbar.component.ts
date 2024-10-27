@@ -1,4 +1,6 @@
 import { Component, NgModule } from '@angular/core';
+import { Router } from '@angular/router';
+import { ROUTES } from '../../app.routes.constants';
 
 @Component({
   selector: 'app-navbar',
@@ -7,4 +9,10 @@ import { Component, NgModule } from '@angular/core';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })
-export class NavbarComponent { }
+export class NavbarComponent {
+  constructor(private router: Router) { }
+
+  public navigateToDashboard(){
+    this.router.navigate([ROUTES.DASHBOARD]);
+  }
+}
