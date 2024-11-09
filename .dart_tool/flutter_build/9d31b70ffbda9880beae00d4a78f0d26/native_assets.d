@@ -1,0 +1,1 @@
+ /home/yuri-bueno/Documentos/dev/SambaWeb-Front/.dart_tool/flutter_build/9d31b70ffbda9880beae00d4a78f0d26/native_assets.yaml: 

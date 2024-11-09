@@ -1,19 +1,34 @@
 services:
-  angular:
-    image: node:20
+  flutter:
+    image: ubuntu:latest
     ports:
-      - "4200:4200"
-    environment:
-      NODE_ENV: development
+      - 4200:4200
+    command: bash -c "sh .docker/entrypoint.sh"
     volumes:
       - ./:/SambaWeb-Front
-      - .docker/:/SambaWeb-Front/.docker
+      - .docker/:/SambaWeb-Front/.docker 
     working_dir: /SambaWeb-Front
-    command: bash -c "sh .docker/entrypoint.sh"
     networks:
       - sambaweb
     extra_hosts:
       - "host.docker.internal:host-gateway"
+    
+
+    #   angular:
+    #   image: node:20
+    #   ports:
+    #     - "4200:4200"
+    #   environment:
+    #     NODE_ENV: development
+    #   volumes:
+    #     - ./:/SambaWeb-Front
+    #     - .docker/:/SambaWeb-Front/.docker
+    #   working_dir: /SambaWeb-Front
+    #   command: bash -c "sh .docker/entrypoint.sh"
+    #   networks:
+    #     - sambaweb
+    #   extra_hosts:
+    #     - "host.docker.internal:host-gateway"
   nginx:
     image: nginx:stable-alpine
     ports:

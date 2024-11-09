@@ -1,0 +1,15 @@
+/home/yuri-bueno/Documentos/dev/SambaWeb-Front/build/linux/x64/debug/bundle/sambaweb_front
+/home/yuri-bueno/Documentos/dev/SambaWeb-Front/build/linux/x64/debug/bundle/data/icudtl.dat
+/home/yuri-bueno/Documentos/dev/SambaWeb-Front/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so
+/home/yuri-bueno/Documentos/dev/SambaWeb-Front/build/linux/x64/debug/bundle/data/flutter_assets/FontManifest.json
+/home/yuri-bueno/Documentos/dev/SambaWeb-Front/build/linux/x64/debug/bundle/data/flutter_assets/shaders/ink_sparkle.frag
+/home/yuri-bueno/Documentos/dev/SambaWeb-Front/build/linux/x64/debug/bundle/data/flutter_assets/kernel_blob.bin
+/home/yuri-bueno/Documentos/dev/SambaWeb-Front/build/linux/x64/debug/bundle/data/flutter_assets/.env
+/home/yuri-bueno/Documentos/dev/SambaWeb-Front/build/linux/x64/debug/bundle/data/flutter_assets/NOTICES
+/home/yuri-bueno/Documentos/dev/SambaWeb-Front/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.bin
+/home/yuri-bueno/Documentos/dev/SambaWeb-Front/build/linux/x64/debug/bundle/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+/home/yuri-bueno/Documentos/dev/SambaWeb-Front/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.json
+/home/yuri-bueno/Documentos/dev/SambaWeb-Front/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.bin.json
+/home/yuri-bueno/Documentos/dev/SambaWeb-Front/build/linux/x64/debug/bundle/data/flutter_assets/NOTICES.Z
+/home/yuri-bueno/Documentos/dev/SambaWeb-Front/build/linux/x64/debug/bundle/data/flutter_assets/version.json
+/home/yuri-bueno/Documentos/dev/SambaWeb-Front/build/linux/x64/debug/bundle/data/flutter_assets/fonts/MaterialIcons-Regular.otf
